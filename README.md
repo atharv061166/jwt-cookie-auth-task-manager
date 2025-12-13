@@ -40,7 +40,7 @@ npm run dev
 Backend runs on **http://localhost:5001** (or port in your `.env`)
 
 #### Frontend Setup
-
+# Open Frontend in new terminal window
 ```bash
 cd frontend
 npm install
