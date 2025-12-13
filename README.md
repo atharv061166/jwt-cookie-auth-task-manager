@@ -156,3 +156,19 @@ docker compose logs -f
 The frontend is a browser-based application.
 API requests must use http://localhost:5001, not Docker service names
 (e.g. `backend`), because Docker DNS does not exist in the browser.
+
+##📈 Scalability Notes
+
+This project is built in a simple and modular way, so it can be scaled in the future if the number of users or requests increases.
+
+The backend uses JWT authentication, which is stateless, so multiple backend servers can run at the same time.
+
+MongoDB can be moved from a local database to a cloud service like MongoDB Atlas for better reliability and storage.
+
+Frequently used data (like task lists) can be cached using Redis to improve performance.
+
+A load balancer can be added to distribute traffic between multiple backend servers.
+
+Logging, rate limiting, and monitoring can be added for production use.
+
+These changes can be added without changing the core structure of the application.
